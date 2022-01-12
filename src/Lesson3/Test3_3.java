@@ -1,6 +1,6 @@
 package Lesson3;
 
-public class Test6 {
+public class Test3_3 {
     public static void main (String[] args) {
 
         int a=3;
