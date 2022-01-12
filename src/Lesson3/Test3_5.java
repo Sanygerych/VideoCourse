@@ -19,7 +19,8 @@ public class Test3_5 {
         int i=10;
         int i2=c;
 
-        System.out.println(i%c);
+        System.out.println(i|c);
+
 
     }
 }
