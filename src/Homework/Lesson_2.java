@@ -59,8 +59,9 @@ public class Lesson_2 {
         boolean bool2 = false;
 
         System.out.println(bool1);
+
+
         System.out.println(bool2);
-        System.out.println(bool1);
 
         char c1 = 'ō';
         char c2 = 333;
@@ -68,7 +69,6 @@ public class Lesson_2 {
 
         System.out.println(c1);
         System.out.println(c2);
-        System.out.println(c3);
         System.out.println(c3);
     }
 
