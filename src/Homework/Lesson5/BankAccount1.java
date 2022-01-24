@@ -8,14 +8,22 @@ public class BankAccount1 {
     String name;
     double balance;
 
-    double popolnenieScheta(double summa) {
-        balance+=summa;
-        return balance;
+    void popolnenieBalanca (double summapopolnenieScheta) {
+        System.out.println(id + ". " + name);
+        System.out.println("Balancs do popolneniya: " + balance + "$");
+        System.out.println("Balans poplnyetsya na: " + summapopolnenieScheta + "$");
+        balance+=summapopolnenieScheta;
+        System.out.println("Balans pocle popolneniya: " + balance + "$");
+        System.out.println();
     }
 
-    double snytieSoScheta(double summa) {
-        balance-=summa;
-        return balance;
+    void snyatieSoScheta (double summaSnyatiya) {
+        System.out.println(id + ". " + name);
+        System.out.println("Balancs do snytiya: " + balance + "$");
+        System.out.println("Balans umenshaetsya na: " + summaSnyatiya + "$");
+        balance-=summaSnyatiya;
+        System.out.println("Balans pocle snyatiya: " + balance + "$");
+        System.out.println();
     }
 }
 
@@ -39,15 +47,12 @@ class BankAccount1Test {
         HisAccount.name = "Ivan";
         HisAccount.balance = 124.12;
 
-        MyAccount.snytieSoScheta(10.35);
-        System.out.println(MyAccount.balance);
+        MyAccount.snyatieSoScheta(10.35);
+        YourAccount.popolnenieBalanca(11.25);
+        HisAccount.snyatieSoScheta(64.43);
+        HisAccount.popolnenieBalanca(38.89);
 
-        YourAccount.popolnenieScheta(11.25);
-        System.out.println(YourAccount.balance);
-
-        HisAccount.snytieSoScheta(65.43);
-        HisAccount.popolnenieScheta(38.89);
-        System.out.println(HisAccount.balance);
 
     }
 }
+
